@@ -16,8 +16,9 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 	<?php wp_head(); ?>
 </head>
 
@@ -31,7 +32,7 @@
 					<?php bulmapress_blog_description('navbar-item is-muted has-text-white'); ?>
 					<?php bulmapress_menu_toggle(); ?>
 				</div>
-				<div class="navbar-menu">
+				<div class="navbar-menu level">
 					<div class="navbar-start"></div>
 					<?php bulmapress_navigation(); ?>
 				</div>

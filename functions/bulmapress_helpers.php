@@ -9,8 +9,9 @@
 
 function bulmapress_home_link($class)
 {
-	$output = '<a href="' . esc_url( home_url( '/' ) ) . '" class="' . $class . '" rel="home">' . get_bloginfo('name') . '</a>';
+	$output = '<a href="' . esc_url( home_url( '/' ) ) . '" class="' . $class . '" rel="home">' . '<img src= "../wp-content/themes/bulmapress-master/frontend/assets/img/HabitatMadisonClarkLogo.png" class="logo">' .  '</a>';
 	echo $output;
+	// to put the title back, remove image and paste get_bloginfo('name') 
 }
 
 
@@ -36,7 +37,7 @@ function bulmapress_menu_toggle()
 {
 	$output = '
 		<button id="menu-toggle" class="navbar-burger" 
-			style="border: none; background: inherit; color: inherit; height: auto;" 
+			style="border: none; background: inherit; color: white; height: auto;" 
 			aria-controls="primary-menu" aria-expanded="false">
 			<span></span>
 			<span></span>

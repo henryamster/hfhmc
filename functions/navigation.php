@@ -17,7 +17,7 @@ function bulmapress_navigation()
 		'theme_location'    => 'menu-1',
 		'depth'             => 0,
 		'container'         => 'div id="navigation"',
-		'menu_class'        => 'navbar-end',
+		'menu_class'        => 'navbar-end is-uppercase has-text-weight-semibold',
 		'fallback_cb'       => 'bulmapress_navwalker::fallback',
 		'walker'            => new bulmapress_navwalker()
 		)

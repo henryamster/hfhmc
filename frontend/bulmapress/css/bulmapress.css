@@ -1,5 +1,18 @@
 /*! bulmapress.com v0.0.1 | GNU General Public License v2 or later */
 /* -- Color Defaults -- */
+.fa, .fas, .fab {
+  font-family: 'FontAwesome' !important;
+  font-style: normal;
+}
+
+footer#colophon.site-footer.hero {
+  background: #00b0d7;
+}
+
+* {
+  font-family: Helvetica;
+}
+
 /*! bulma.io v0.6.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
@@ -139,7 +152,7 @@ body {
 }
 
 a {
-  color: #c4d600;
+  color: white;
   cursor: pointer;
   text-decoration: none;
 }
@@ -5979,7 +5992,7 @@ a.dropdown-item.is-active {
 }
 
 .navbar {
-  background-color: white;
+  background-color: #00b0d7;
   min-height: 3.25rem;
   position: relative;
 }
@@ -6574,6 +6587,7 @@ html.has-navbar-fixed-bottom {
   position: relative;
   width: 3.25rem;
   margin-left: auto;
+  color: white;
 }
 
 .navbar-burger span {
@@ -6623,7 +6637,7 @@ html.has-navbar-fixed-bottom {
 
 .navbar-item,
 .navbar-link {
-  color: #4a4a4a;
+  color: white;
   display: block;
   line-height: 1.5;
   padding: 0.5rem 1rem;
@@ -6643,7 +6657,7 @@ a.navbar-link.is-active {
 }
 
 .navbar-item img {
-  max-height: 1.75rem;
+  max-height: 5rem;
 }
 
 .navbar-item.has-dropdown {
@@ -6670,9 +6684,9 @@ a.navbar-link.is-active {
   background-color: transparent;
   border-bottom-color: #c4d600;
   border-bottom-style: solid;
-  border-bottom-width: 3px;
+  border-bottom-width: 12px;
   color: #c4d600;
-  padding-bottom: calc(0.5rem - 3px);
+  padding-bottom: calc(0.5rem - 12px);
 }
 
 .navbar-content {
@@ -6713,7 +6727,7 @@ a.navbar-link.is-active {
     display: flex;
   }
   .navbar-menu {
-    background-color: white;
+    background-color: #00b0d7;
     box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
     padding: 0.5rem 0;
   }
@@ -9776,6 +9790,10 @@ body,
   min-height: 80px;
 }
 
+.logo {
+  height: 200px;
+}
+
 h1 h1,
 h1 h2,
 h1 h3,
@@ -10160,6 +10178,7 @@ figure.aligncenter {
 .main-navigation {
   display: flex;
   position: relative;
+  padding: 0 40px 0 40px;
 }
 
 .main-navigation ul {

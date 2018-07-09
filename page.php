@@ -14,12 +14,13 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area">
+<div id="primary" class="content-area has-background-link has-text-link-invert">
 	<main id="main" class="site-main" role="main">
 		<?php while ( have_posts() ) : the_post(); ?>
 			<?php get_template_part( 'template-parts/content' ); ?>
 			<?php bulmapress_get_comments(); ?>
 		<?php endwhile; ?>
+		
 	</main><!-- #main -->
 </div><!-- #primary -->
 
