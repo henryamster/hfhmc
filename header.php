@@ -25,10 +25,10 @@
 	<div id="page" class="site">
 		<?php bulmapress_skip_link_screen_reader_text(); ?>
 		<header id="header">
-			<nav id="site-navigation" class="navbar" role="navigation">
-				<div class="navbar-brand">
-					<?php bulmapress_home_link('navbar-item'); ?>
-					<?php bulmapress_blog_description('navbar-item is-muted'); ?>
+			<nav id="site-navigation" class="navbar has-background-primary" role="navigation">
+				<div class="navbar-brand has-background-primary">
+					<?php bulmapress_home_link('navbar-item  has-text-white'); ?>
+					<?php bulmapress_blog_description('navbar-item is-muted has-text-white'); ?>
 					<?php bulmapress_menu_toggle(); ?>
 				</div>
 				<div class="navbar-menu">
