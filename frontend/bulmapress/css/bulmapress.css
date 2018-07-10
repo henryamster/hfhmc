@@ -6,7 +6,7 @@
 }
 
 footer#colophon.site-footer.hero {
-  background: #00b0d7;
+  background: #7a7a7a;
 }
 
 * {
@@ -22,6 +22,26 @@ ul.is-unstyled {
 .content {
   color: white;
   background: #00b0d7;
+}
+
+img.is-cover-fit {
+  object-fit: cover;
+  min-width: 100vw;
+  height: 100vh;
+}
+
+div.container {
+  margin: 0;
+}
+
+div.content {
+  width: 100vw;
+  padding-bottom: 35px;
+  margin-bottom: 0;
+}
+
+footer {
+  border-top: 12px;
 }
 
 /*! bulma.io v0.6.2 | MIT License | github.com/jgthms/bulma */
@@ -6668,7 +6688,7 @@ a.navbar-link.is-active {
 }
 
 .navbar-item img {
-  max-height: 5rem;
+  max-height: 8rem;
 }
 
 .navbar-item.has-dropdown {
@@ -6687,7 +6707,7 @@ a.navbar-link.is-active {
 }
 
 .navbar-item.is-tab:hover {
-  background-color: transparent;
+  background-color: #dbdbdb;
   border-bottom-color: #c4d600;
 }
 
@@ -6859,7 +6879,7 @@ a.navbar-link.is-active {
     margin-left: auto;
   }
   .navbar-dropdown {
-    background-color: white;
+    background-color: #00b0d7;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     border-top: 1px solid #dbdbdb;

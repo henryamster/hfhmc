@@ -48,8 +48,5 @@
 				?>
 			</div><!-- .entry-content -->
 
-			<footer class="content entry-footer">
-				<?php bulmapress_entry_footer(); ?>
-			</footer><!-- .entry-footer -->
 		</div>
 	</article><!-- #post-## -->
