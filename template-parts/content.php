@@ -8,13 +8,14 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('section'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('section is-marginless is-paddingless is-fullwidth'); ?>>
 	<div class="container">
-		<header class="content">
+		<?php if ( 'page' != get_post_type() ) : ?>
+		<header class="content ">
 			<?php if ( is_single() ) : ?>
 				<?php bulmapress_the_title('is-1', FALSE); ?>
 			<?php elseif ( 'page' === get_post_type() ) : ?>
-				<?php bulmapress_the_title('is-2', FALSE); ?>
+				
 			<?php else : ?>
 				<?php bulmapress_the_title('is-2'); ?>
 			<?php endif; ?>
@@ -24,7 +25,7 @@
 				</div><!-- .entry-meta -->
 			<?php endif; ?>
 		</header><!-- .entry-header -->
-
+<?php endif;?>
 		<div class="content entry-content">
 			<?php the_content( sprintf(
 				/* translators: %s: Name of current post. */
