@@ -26,7 +26,7 @@
 			<?php endif; ?>
 		</header><!-- .entry-header -->
 <?php endif;?>
-		<div class="content entry-content">
+<div class="content <?php if ( 'post' === get_post_type() ) : ?> post-content <?php endif; ?> entry-content">
 			<?php the_content( sprintf(
 				/* translators: %s: Name of current post. */
 				wp_kses(

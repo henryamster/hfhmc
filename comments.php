@@ -27,7 +27,7 @@ endif;
 		<?php
 		// You can start editing here -- including this comment!
 		if ( have_comments() ) : ?>
-		<div class="content">
+		<div class="content comment-content">
 			<div class="header">
 				<h2 class="title is-3"><?php esc_html_e('Comments', 'bulmapress'); ?></h2>
 				<p class="subtitle">

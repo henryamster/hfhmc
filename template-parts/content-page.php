@@ -13,6 +13,7 @@
 		<header class="entry-header">
 			<?php the_title( '<h1 class="title is-1 entry-title">', '</h1>' ); ?>
 		</header><!-- .entry-header -->
+		
 
 		<div class="content entry-content">
 			<?php the_content();?>

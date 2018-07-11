@@ -27,12 +27,12 @@
 		<?php bulmapress_skip_link_screen_reader_text(); ?>
 		<header id="header">
 			<nav id="site-navigation" class="navbar has-background-primary" role="navigation">
-				<div class="navbar-brand has-background-primary">
+				<div class="navbar-brand has-background-primary ">
 					<?php bulmapress_home_link('navbar-item  has-text-white'); ?>
 					<?php bulmapress_blog_description('navbar-item is-muted has-text-white'); ?>
 					<?php bulmapress_menu_toggle(); ?>
 				</div>
-				<div class="navbar-menu level">
+				<div class="navbar-menu ">
 					<div class="navbar-start"></div>
 					<?php bulmapress_navigation(); ?>
 				</div>

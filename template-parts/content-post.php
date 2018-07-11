@@ -36,7 +36,7 @@
 				<?php endif; ?>
 			</header><!-- .entry-header -->
 		</div>
-		<div class="content entry-content">
+		<div class="content  <?php if ( 'post' === get_post_type() ) : ?> post-content <?php endif; ?> entry-content">
 		<?php if ( is_single() ) : ?>
 			<?php the_content( sprintf(
 				/* translators: %s: Name of current post. */

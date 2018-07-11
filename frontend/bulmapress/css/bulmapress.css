@@ -44,6 +44,64 @@ footer {
   border-top: 12px;
 }
 
+div.post-content {
+  width: auto;
+}
+
+span.posted-on a {
+  color: #0a0a0a;
+}
+
+span.author a {
+  color: #0a0a0a;
+}
+
+span.posted-on a:hover {
+  color: #00b0d7;
+}
+
+span.author a:hover {
+  color: #00b0d7;
+}
+
+div.entry-footer {
+  width: auto;
+}
+
+div.type-post {
+  margin-top: 4em;
+}
+
+div.nav-links a {
+  color: black;
+}
+
+article.comment-body {
+  color: black;
+}
+
+article.comment-body a {
+  color: black;
+}
+
+article.comment-body a:hover {
+  color: #00b0d7;
+}
+
+div.comment-content {
+  background: transparent;
+  width: 80vw;
+}
+
+.icon-text {
+  color: #dbdbdb;
+  text-transform: uppercase;
+}
+
+.add-padd {
+  padding: 25px;
+}
+
 /*! bulma.io v0.6.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
@@ -6024,7 +6082,7 @@ a.dropdown-item.is-active {
 
 .navbar {
   background-color: #00b0d7;
-  min-height: 3.25rem;
+  min-height: 2.85rem;
   position: relative;
 }
 
@@ -6561,7 +6619,7 @@ a.dropdown-item.is-active {
 .navbar > .container {
   align-items: stretch;
   display: flex;
-  min-height: 3.25rem;
+  min-height: 2.85rem;
   width: 100%;
 }
 
@@ -6589,11 +6647,11 @@ a.dropdown-item.is-active {
 }
 
 html.has-navbar-fixed-top {
-  padding-top: 3.25rem;
+  padding-top: 2.85rem;
 }
 
 html.has-navbar-fixed-bottom {
-  padding-bottom: 3.25rem;
+  padding-bottom: 2.85rem;
 }
 
 .navbar-brand,
@@ -6601,7 +6659,7 @@ html.has-navbar-fixed-bottom {
   align-items: stretch;
   display: flex;
   flex-shrink: 0;
-  min-height: 3.25rem;
+  min-height: 2.85rem;
 }
 
 .navbar-tabs {
@@ -6614,9 +6672,9 @@ html.has-navbar-fixed-bottom {
 .navbar-burger {
   cursor: pointer;
   display: block;
-  height: 3.25rem;
+  height: 2.85rem;
   position: relative;
-  width: 3.25rem;
+  width: 2.85rem;
   margin-left: auto;
   color: white;
 }
@@ -6678,8 +6736,8 @@ html.has-navbar-fixed-bottom {
 a.navbar-item:hover, a.navbar-item.is-active,
 a.navbar-link:hover,
 a.navbar-link.is-active {
-  background-color: whitesmoke;
-  color: #c4d600;
+  background-color: white;
+  color: #00b0d7;
 }
 
 .navbar-item {
@@ -6688,7 +6746,7 @@ a.navbar-link.is-active {
 }
 
 .navbar-item img {
-  max-height: 8rem;
+  max-height: 5.5rem;
 }
 
 .navbar-item.has-dropdown {
@@ -6702,22 +6760,22 @@ a.navbar-link.is-active {
 
 .navbar-item.is-tab {
   border-bottom: 1px solid transparent;
-  min-height: 3.25rem;
+  min-height: 2.85rem;
   padding-bottom: calc(0.5rem - 1px);
 }
 
 .navbar-item.is-tab:hover {
-  background-color: #dbdbdb;
-  border-bottom-color: #c4d600;
+  background-color: #c4d600;
+  border-bottom-color: white;
 }
 
 .navbar-item.is-tab.is-active {
   background-color: transparent;
-  border-bottom-color: #c4d600;
+  border-bottom-color: white;
   border-bottom-style: solid;
-  border-bottom-width: 12px;
+  border-bottom-width: 2px;
   color: #c4d600;
-  padding-bottom: calc(0.5rem - 12px);
+  padding-bottom: calc(0.5rem - 2px);
 }
 
 .navbar-content {
@@ -6745,7 +6803,7 @@ a.navbar-link.is-active {
   border: none;
   display: none;
   height: 1px;
-  margin: 0.5rem 0;
+  margin: 0.2rem 0;
 }
 
 @media screen and (max-width: 1023px) {
@@ -6782,14 +6840,14 @@ a.navbar-link.is-active {
   }
   .navbar.is-fixed-top .navbar-menu, .navbar.is-fixed-top-touch .navbar-menu {
     -webkit-overflow-scrolling: touch;
-    max-height: calc(100vh - 3.25rem);
+    max-height: calc(100vh - 2.85rem);
     overflow: auto;
   }
   html.has-navbar-fixed-top-touch {
-    padding-top: 3.25rem;
+    padding-top: 2.85rem;
   }
   html.has-navbar-fixed-bottom-touch {
-    padding-bottom: 3.25rem;
+    padding-bottom: 2.85rem;
   }
 }
 
@@ -6802,7 +6860,7 @@ a.navbar-link.is-active {
     display: flex;
   }
   .navbar {
-    min-height: 3.25rem;
+    min-height: 2.85rem;
   }
   .navbar.is-transparent a.navbar-item:hover, .navbar.is-transparent a.navbar-item.is-active,
   .navbar.is-transparent a.navbar-link:hover,
@@ -6950,10 +7008,10 @@ a.navbar-link.is-active {
     top: 0;
   }
   html.has-navbar-fixed-top-desktop {
-    padding-top: 3.25rem;
+    padding-top: 2.85rem;
   }
   html.has-navbar-fixed-bottom-desktop {
-    padding-bottom: 3.25rem;
+    padding-bottom: 2.85rem;
   }
   a.navbar-item.is-active,
   a.navbar-link.is-active {
@@ -6964,7 +7022,7 @@ a.navbar-link.is-active {
     background-color: transparent;
   }
   .navbar-item.has-dropdown:hover .navbar-link, .navbar-item.has-dropdown.is-active .navbar-link {
-    background-color: whitesmoke;
+    background-color: #7a7a7a;
   }
 }
 
@@ -10292,13 +10350,13 @@ figure.aligncenter {
   .main-navigation ul.dropdown-menu {
     display: none;
     position: absolute;
-    top: 3.25rem;
+    top: 2.85rem;
     right: 0;
   }
 }
 
 .dropdown-menu {
-  display: none !important;
+  display: none;
 }
 
 .navbar-menu.is-active {
