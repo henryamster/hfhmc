@@ -39,13 +39,18 @@ class bulmapress_navwalker  extends Walker_Nav_Menu {
 	public function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
 		$liClasses = 'navbar-item '.$item->title;
 		$hasChildren = $args->walker->has_children;
+		$target ="";
+		
+		if (!empty($item->target)){
+			$target = " target='" . $item->target . "' ";
+		}
 		$liClasses .= $hasChildren? " has-dropdown is-hoverable": "";
 		if($hasChildren){
 			$output .= "<div class='".$liClasses."'>";
-			$output .= "\n<a class='navbar-link' href='".$item->url."'>".$item->title."</a>";
+			$output .= "\n<a class='navbar-link' href='".$item->url."' ". $target .">".$item->title."</a>";
 		}
 		else {
-			$output .= "<a class='".$liClasses."' href='".$item->url."'>".$item->title;
+			$output .= "<a class='".$liClasses."' href='".$item->url."' ". $target  .">".$item->title;
 		}
 		// Adds has_children class to the item so end_el can determine if the current element has children
 		if ( $hasChildren ) {
