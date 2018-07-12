@@ -13,6 +13,10 @@ footer#colophon.site-footer.hero {
   font-family: Helvetica;
 }
 
+div.entry-content {
+  min-height: 100vh;
+}
+
 ul.is-unstyled {
   list-style: none;
   margin: 0;
@@ -117,7 +121,7 @@ form {
   font-size: 22px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   form {
     padding-left: 5vw;
     padding-right: 5vw;
@@ -125,13 +129,27 @@ form {
 }
 
 label {
-  font-weight: 800;
+  font-weight: 100;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   input, textarea {
     width: 90vw;
     margin: 5vw;
+  }
+}
+
+.img-blur {
+  filter: blur(0.1px);
+}
+
+.half-page-top-mar {
+  margin-top: 45vh;
+}
+
+@media (max-width: 800px) {
+  .half-page-top-mar {
+    margin-top: 20vh;
   }
 }
 

@@ -9,7 +9,7 @@
 
 function bulmapress_home_link($class)
 {
-	$output = '<a href="' . esc_url( home_url( '/' ) ) . '" class="' . $class . '" rel="home">' . '<img src= "../wp-content/themes/bulmapress-master/frontend/assets/img/HabitatMadisonClarkLogo.png" class="logo">' .  '</a>';
+	$output = '<a href="' . esc_url( home_url( '/' ) ) . '" class="' . $class . '" rel="home">' . '<img src= "http://localhost/wp-content/uploads/2018/07/HabitatMadisonClarkLogo.png" class="logo">' .  '</a>';
 	echo $output;
 	// to put the title back, remove image and paste get_bloginfo('name') 
 }

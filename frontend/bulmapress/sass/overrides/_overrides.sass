@@ -8,6 +8,9 @@ footer#colophon.site-footer.hero
 *
     font-family: Helvetica
 
+div.entry-content
+    min-height: 100vh
+
 
 
 ul.is-unstyled 
@@ -79,15 +82,23 @@ form
     padding-bottom: 12vh
     padding-left: 20vw
     font-size: 22px
-    @media(max-width: 600px)
+    @media(max-width: 800px)
         padding-left: 5vw
         padding-right: 5vw
 
 label
-    font-weight: 800
+    font-weight: 100
 
  
 input, textarea 
-    @media(max-width: 600px)
+    @media(max-width: 800px)
         width: 90vw 
         margin: 5vw
+
+.img-blur 
+    filter: blur(.1px)
+
+.half-page-top-mar
+    margin-top: 45vh
+    @media(max-width: 800px)
+        margin-top: 20vh

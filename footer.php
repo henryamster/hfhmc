@@ -28,7 +28,7 @@
 			</span>
 			</li>
 			<li class="is-size-6 is-italic">
-			<a href="https://goo.gl/maps/M3fWfHyeQZy"><i class="fas fa-map-marker-alt"></i>1417 E Main St, Richmond, KY, 40475
+			<a href="https://goo.gl/maps/M3fWfHyeQZy"><i class="fa fa-map-marker"></i> 1417 E Main St, Richmond, KY, 40475
 			</a></li>
 			<li class="is-size-7">
 			<a href="tel:8596259208"><i class="fas fa-phone"></i> telephone: (859)625-9208 
@@ -48,7 +48,7 @@
 			</span>
 			</li>
 			<li class="is-size-6 is-italic">
-			<a href="https://goo.gl/maps/HdF4VkTf8Pt"><i class="fas fa-map-marker-alt"></i>1946 Bypass Rd, Winchester, KY, 40391
+			<a href="https://goo.gl/maps/HdF4VkTf8Pt"><i class="fa fa-map-marker"></i> 1946 Bypass Rd, Winchester, KY, 40391
 			</a></li>
 			
 			<li class="is-size-7"><a href="https://www.facebook.com/WinchesterKyReStore/"><i class="fab fa-facebook-square"></i> facebook</a></li>
@@ -66,7 +66,7 @@
 			</span>
 			</li>
 			<li class="is-size-6 is-italic">
-			<a href="https://goo.gl/maps/Cxp2KZKaaMK2"><i class="fas fa-map-marker-alt"></i>830 Eastern Bypass, Richmond, KY 40475
+			<a href="https://goo.gl/maps/Cxp2KZKaaMK2"><i class="fa fa-map-marker"></i> 830 Eastern Bypass, Richmond, KY 40475
 			</a></li>
 			<li class="is-size-7">
 			<a href="tel:8593535556"><i class="fas fa-phone"></i> telephone: (859) 353-5556
