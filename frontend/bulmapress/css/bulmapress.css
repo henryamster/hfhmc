@@ -34,10 +34,6 @@ img.is-cover-fit {
   height: 100vh;
 }
 
-div.container {
-  margin: 0;
-}
-
 div.content {
   width: 100vw;
   padding-bottom: 35px;
@@ -50,6 +46,11 @@ footer {
 
 div.post-content {
   width: auto;
+}
+
+div.footer-content {
+  width: 85%;
+  margin: 0 auto;
 }
 
 span.posted-on a {
@@ -156,6 +157,7 @@ label {
 @font-face {
   font-family: 'Minion Pro';
   src: url("wordpress/wp-content/themes/bulmapress-master/frontend/assets/fonts/Minion Pro Regular.ttf");
+  src: url("wp-content/themes/bulmapress-master/frontend/assets/fonts/Minion Pro Regular.ttf");
 }
 
 .minion {
@@ -163,8 +165,10 @@ label {
 }
 
 .blank-temp {
+  width: 100%;
   padding-top: 114px;
   font-size: 2.0em;
+  margin-right: 25px;
   line-height: .9em;
   padding-left: 20vw;
 }
@@ -183,10 +187,41 @@ label {
   }
 }
 
+@media (max-width: 450px) {
+  .blank-temp {
+    font-size: .8em;
+    padding-left: 2vw;
+  }
+}
+
 div.home-bg {
-  background-image: url("wordpress/wp-content/themes/bulmapress-master/frontend/assets/img/35472605_1828287807229918_5885346587097432064_o.jpg");
-  background-position: fixed;
-  background-size: cover;
+  font-family: Helvetica;
+}
+
+header {
+  border-bottom: 4px solid rgba(255, 255, 255, 0.7);
+}
+
+div.animated-bg {
+  animation: green-to-blue 12s ease infinite;
+}
+
+div.eighty-five {
+  width: 75%;
+}
+
+@media (max-width: 780px) {
+  div.eighty-five {
+    width: 100%;
+  }
+}
+
+div.paper {
+  background: whitesmoke !important;
+}
+
+div.paper.no-bottom {
+  margin-bottom: 0;
 }
 
 /*! bulma.io v0.6.2 | MIT License | github.com/jgthms/bulma */
@@ -196,6 +231,18 @@ div.home-bg {
   }
   to {
     transform: rotate(359deg);
+  }
+}
+
+@keyframes green-to-blue {
+  0% {
+    background-color: #00b0d7;
+  }
+  50% {
+    background-color: #c4d600;
+  }
+  100% {
+    background-color: #00b0d7;
   }
 }
 
@@ -310,7 +357,7 @@ button,
 input,
 select,
 textarea {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Helvetica", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 code,
@@ -6815,8 +6862,8 @@ html.has-navbar-fixed-bottom {
 .navbar-link {
   color: white;
   display: block;
-  line-height: 1.5;
-  padding: 0.5rem 1rem;
+  line-height: .9;
+  padding: 0.2rem 1rem;
   position: relative;
 }
 
@@ -6958,8 +7005,8 @@ a.navbar-link.is-active {
     background-color: transparent !important;
   }
   .navbar.is-transparent .navbar-dropdown a.navbar-item:hover {
-    background-color: whitesmoke;
-    color: #0a0a0a;
+    background-color: #c4d600;
+    color: white;
   }
   .navbar.is-transparent .navbar-dropdown a.navbar-item.is-active {
     background-color: whitesmoke;
@@ -7024,7 +7071,7 @@ a.navbar-link.is-active {
     margin-left: auto;
   }
   .navbar-dropdown {
-    background-color: #00b0d7;
+    background-color: white;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     border-top: 1px solid #dbdbdb;
@@ -7045,8 +7092,8 @@ a.navbar-link.is-active {
     padding-right: 3rem;
   }
   .navbar-dropdown a.navbar-item:hover {
-    background-color: whitesmoke;
-    color: #0a0a0a;
+    background-color: #c4d600;
+    color: white;
   }
   .navbar-dropdown a.navbar-item.is-active {
     background-color: whitesmoke;
@@ -10082,7 +10129,7 @@ pre {
 
 .container {
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .container.is-narrow {
@@ -10370,7 +10417,7 @@ figure.aligncenter {
 }
 
 .navbar-item {
-  color: #e2dcc5;
+  color: #c4d600;
 }
 
 .navbar-item.is-muted {
@@ -10393,7 +10440,7 @@ figure.aligncenter {
 }
 
 .navbar-item.is-tab {
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid white;
   border-top: 1px solid transparent;
   padding-left: 12px;
   padding-right: 12px;

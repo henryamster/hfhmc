@@ -25,17 +25,22 @@ img.is-cover-fit
     min-width: 100vw
     height: 100vh
 div.container
-    margin: 0
+    // margin: 0
 
 div.content
     width: 100vw
     padding-bottom: 35px
     margin-bottom: 0
+  
 
 footer 
     border-top: 12px
 div.post-content
     width: auto
+
+div.footer-content
+    width: 85%
+    margin: 0 auto
 
 
 span.posted-on a
@@ -106,14 +111,15 @@ input, textarea
 @font-face 
     font-family: 'Minion Pro'
     src: url('wordpress/wp-content/themes/bulmapress-master/frontend/assets/fonts/Minion Pro Regular.ttf')
-
+    src: url('wp-content/themes/bulmapress-master/frontend/assets/fonts/Minion Pro Regular.ttf')
 .minion 
     font-family: 'Minion Pro'
 
 .blank-temp
+    width: 100%
     padding-top: 114px
     font-size: 2.0em
-
+    margin-right: 25px
     line-height: .9em 
     padding-left: 20vw
     @media(max-width: 800px)
@@ -122,7 +128,26 @@ input, textarea
     @media(max-width: 600px)
         font-size: 1.2em
         padding-left: 5vw
+    @media(max-width: 450px)
+        font-size: .8em
+        padding-left: 2vw
 div.home-bg
-    background-image: url('wordpress/wp-content/themes/bulmapress-master/frontend/assets/img/35472605_1828287807229918_5885346587097432064_o.jpg')
-    background-position: fixed
-    background-size: cover
+    font-family: Helvetica
+
+header
+    border-bottom: 4px solid rgba(255,255,255,0.7)
+
+
+div.animated-bg 
+	animation: green-to-blue 12s ease infinite
+
+div.eighty-five
+    width: 75%
+    @media(max-width: 780px)
+        width: 100%
+
+div.paper
+    background: $light !important
+div.paper.no-bottom 
+    margin-bottom: 0
+
