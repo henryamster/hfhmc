@@ -29,7 +29,7 @@ div.container
 
 div.content
     width: 100vw
-    padding-bottom: 35px
+    padding-bottom: 0
     margin-bottom: 0
   
 
@@ -73,7 +73,8 @@ div.comment-content
     text-transform: uppercase 
 .add-padd
     padding: 25px
-
+    @media(max-width: 769px)
+        padding: 6px
 input, textarea
     width: 60vw
     border-radius: 8px
@@ -87,7 +88,7 @@ form
     padding-bottom: 12vh
     padding-left: 20vw
     font-size: 22px
-    @media(max-width: 800px)
+    @media(max-width: 729px)
         padding-left: 5vw
         padding-right: 5vw
 
@@ -96,7 +97,7 @@ label
 
  
 input, textarea 
-    @media(max-width: 800px)
+    @media(max-width: 729px)
         width: 90vw 
         margin: 5vw
 
@@ -105,11 +106,12 @@ input, textarea
 
 .half-page-top-mar
     margin-top: 45vh
-    @media(max-width: 800px)
+    @media(max-width: 729px)
         margin-top: 20vh
 
 @font-face 
     font-family: 'Minion Pro'
+    src: url('frontend/assets/fonts/Minion Pro Regular.ttf')
     src: url('wordpress/wp-content/themes/bulmapress-master/frontend/assets/fonts/Minion Pro Regular.ttf')
     src: url('wp-content/themes/bulmapress-master/frontend/assets/fonts/Minion Pro Regular.ttf')
 .minion 
@@ -139,15 +141,91 @@ header
 
 
 div.animated-bg 
-	animation: green-to-blue 12s ease infinite
+	animation: green-to-blue 22s ease infinite
 
 div.eighty-five
     width: 75%
-    @media(max-width: 780px)
+    @media(max-width: 729px)
         width: 100%
 
 div.paper
     background: $light !important
 div.paper.no-bottom 
     margin-bottom: 0
+div.no-bottom
+    padding-bottom: 0 !important
+    margin-borrom: 0 !important
+#newsletter-div.no-bottom
+    padding-bottom: 0 !important
+    margin-borrom: 0 !important
 
+
+.video-content
+    width: 100vw
+    min-height: 98vh
+    @media(max-width: 980px)
+        min-height: 75vh 
+    @media(max-width: 780px)
+        min-height: 55vh 
+    @media(max-width: 580px)
+        min-height: 35vh        
+    @media(max-width: 400px)
+        min-height: 25vh        
+    iframe
+        min-height: 98vh
+        @media(max-width: 980px)
+            min-height: 75vh 
+        @media(max-width: 780px)
+            min-height: 55vh 
+        @media(max-width: 580px)
+            min-height: 35vh        
+        @media(max-width: 400px)
+            min-height: 25vh 
+
+
+.habitat-bold
+    font-weight: 800
+    letter-spacing: 2px
+    font-family: 'Helvetica' 
+
+.min-400
+    min-height: 400px
+
+
+label.newsletter
+    display: inline
+input.newsletter
+    font-size: 14px
+    width: 40vw
+    display: inline
+    margin: 5px
+    padding: 10px
+    background: $blue
+    color: $light
+    @media(max-width: 729px)
+        width: 90% 
+        margin: 5%
+input.newsletter[type="submit"]
+    color: $white
+    display: inline
+    width: 160px
+.is-centered
+    text-align: center
+form.newsletter
+    padding: 20px 0 20px 0
+li.unstyled
+    list-style: none
+    background: $green
+    border: 2px solid white
+    border-radius: 50%
+    padding: 38px
+    height: 250px
+    width: 250px
+    text-align: center
+    box-shadow: 6px 2px $grey 
+    @media(max-width: 769px)
+        padding: 15px
+        border-radius: 8px
+        width: 60vw
+        height: auto
+        font-size: .8em !important

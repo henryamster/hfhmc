@@ -31,7 +31,7 @@
 			<a href="https://goo.gl/maps/M3fWfHyeQZy"><i class="fa fa-map-marker"></i> 1417 E Main St, Richmond, KY, 40475
 			</a></li>
 			<li class="is-size-7">
-			<a href="tel:8596259208"><i class="fas fa-phone"></i> telephone: (859)625-9208 
+			<a href="tel:8596259208"><i class="fas fa-phone"></i> telephone: (859) 625-9208 
 </a>
 			</li>
 			<li class="is-size-7">

@@ -36,7 +36,7 @@ img.is-cover-fit {
 
 div.content {
   width: 100vw;
-  padding-bottom: 35px;
+  padding-bottom: 0;
   margin-bottom: 0;
 }
 
@@ -107,6 +107,12 @@ div.comment-content {
   padding: 25px;
 }
 
+@media (max-width: 769px) {
+  .add-padd {
+    padding: 6px;
+  }
+}
+
 input, textarea {
   width: 60vw;
   border-radius: 8px;
@@ -122,7 +128,7 @@ form {
   font-size: 22px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 729px) {
   form {
     padding-left: 5vw;
     padding-right: 5vw;
@@ -133,7 +139,7 @@ label {
   font-weight: 100;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 729px) {
   input, textarea {
     width: 90vw;
     margin: 5vw;
@@ -148,7 +154,7 @@ label {
   margin-top: 45vh;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 729px) {
   .half-page-top-mar {
     margin-top: 20vh;
   }
@@ -156,6 +162,7 @@ label {
 
 @font-face {
   font-family: 'Minion Pro';
+  src: url("frontend/assets/fonts/Minion Pro Regular.ttf");
   src: url("wordpress/wp-content/themes/bulmapress-master/frontend/assets/fonts/Minion Pro Regular.ttf");
   src: url("wp-content/themes/bulmapress-master/frontend/assets/fonts/Minion Pro Regular.ttf");
 }
@@ -203,14 +210,14 @@ header {
 }
 
 div.animated-bg {
-  animation: green-to-blue 12s ease infinite;
+  animation: green-to-blue 22s ease infinite;
 }
 
 div.eighty-five {
   width: 75%;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 729px) {
   div.eighty-five {
     width: 100%;
   }
@@ -222,6 +229,140 @@ div.paper {
 
 div.paper.no-bottom {
   margin-bottom: 0;
+}
+
+div.no-bottom {
+  padding-bottom: 0 !important;
+  margin-borrom: 0 !important;
+}
+
+#newsletter-div.no-bottom {
+  padding-bottom: 0 !important;
+  margin-borrom: 0 !important;
+}
+
+.video-content {
+  width: 100vw;
+  min-height: 98vh;
+}
+
+@media (max-width: 980px) {
+  .video-content {
+    min-height: 75vh;
+  }
+}
+
+@media (max-width: 780px) {
+  .video-content {
+    min-height: 55vh;
+  }
+}
+
+@media (max-width: 580px) {
+  .video-content {
+    min-height: 35vh;
+  }
+}
+
+@media (max-width: 400px) {
+  .video-content {
+    min-height: 25vh;
+  }
+}
+
+.video-content iframe {
+  min-height: 98vh;
+}
+
+@media (max-width: 980px) {
+  .video-content iframe {
+    min-height: 75vh;
+  }
+}
+
+@media (max-width: 780px) {
+  .video-content iframe {
+    min-height: 55vh;
+  }
+}
+
+@media (max-width: 580px) {
+  .video-content iframe {
+    min-height: 35vh;
+  }
+}
+
+@media (max-width: 400px) {
+  .video-content iframe {
+    min-height: 25vh;
+  }
+}
+
+.habitat-bold {
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-family: 'Helvetica';
+}
+
+.min-400 {
+  min-height: 400px;
+}
+
+label.newsletter {
+  display: inline;
+}
+
+input.newsletter {
+  font-size: 14px;
+  width: 40vw;
+  display: inline;
+  margin: 5px;
+  padding: 10px;
+  background: #00b0d7;
+  color: whitesmoke;
+}
+
+@media (max-width: 729px) {
+  input.newsletter {
+    width: 90%;
+    margin: 5%;
+  }
+}
+
+input.newsletter[type="submit"] {
+  color: white;
+  display: inline;
+  width: 160px;
+}
+
+.is-centered {
+  text-align: center;
+}
+
+form.newsletter {
+  padding: 20px 0 20px 0;
+}
+
+li.unstyled {
+  list-style: none;
+  background: #c4d600;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 38px;
+  height: 250px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 6px 2px #7a7a7a;
+}
+
+@media (max-width: 769px) {
+  li.unstyled {
+    padding: 15px;
+    border-radius: 8px;
+    width: 60vw;
+    height: auto;
+    font-size: .8em !important;
+  }
 }
 
 /*! bulma.io v0.6.2 | MIT License | github.com/jgthms/bulma */
@@ -2807,11 +2948,11 @@ a.box:active {
 }
 
 .content figure:not(:first-child) {
-  margin-top: 2em;
+  margin-top: 0;
 }
 
 .content figure:not(:last-child) {
-  margin-bottom: 2em;
+  margin-bottom: 0;
 }
 
 .content figure img {
