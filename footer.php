@@ -14,6 +14,8 @@
 
 <footer id="colophon" class="site-footer hero is-fullwidth" role="contentinfo">
 	<div class="container footer-content">
+		
+
 		<div class="hero-body has-text-centered is-fullwidth is-centered">
 			<div class="site-info">
 
@@ -86,6 +88,10 @@
 			<div class="columns">
 
 <div class="column has-text-white is-size-7 is-bold is-fullwidth has-text-centered">
+<div class="columns">
+			<div class="column ">
+	<?php get_search_form(); ?>
+</div></div>
 <hr>
 &copy; 2018 Habitat for Humanity of Madison &amp; Clark Counties.  
 </div></div>

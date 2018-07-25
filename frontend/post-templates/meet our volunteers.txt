@@ -1,0 +1,9 @@
+<div class="section ">
+<div class="content container has-text-centered ">
+<h1 class="has-text-white half-page-top-mar">Helping our community help themselves</h1>
+lorem ipsum dolore
+
+<strong>It's pretty east to edit and modify these web pages, following the templates I'm making. Currently, I'm focusing on styling Pages in wordpress and not POSTS, </strong>
+
+</div>
+</div>

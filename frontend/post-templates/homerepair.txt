@@ -1,0 +1,30 @@
+<div class="section paper has-text-black columns level">
+<div class="column level-item">
+<h2 class="text-align-center"><strong>HOME REPAIR PROGRAM</strong></h2>
+<h3>HOME REPAIR PROGRAM</h3>
+Habitat for Humanity of Madison &amp; Clark Counties Home Preservation program helps low-income homeowners who struggle to maintain the exterior of their homes, to reclaim their homes with pride and dignity.  Our Home Preservation program offers painting, landscaping and minor repair services to eligible homeowners so they can continue to live in safe, decent homes for years to come.
+</div>
+<div class="column level-item">
+<strong>What kind of work or repair?</strong>
+
+Projects include:
+<ul>
+ 	<li> Painting</li>
+ 	<li>Landscaping</li>
+ 	<li>Fence repair</li>
+ 	<li>Yard cleaning</li>
+ 	<li>Deck or porch replacement for repair for disabilities</li>
+ 	<li>Siding, gutter, roofing replacement or repair</li>
+</ul>
+</div>
+<div class="column level-item">
+<strong>How does the program work? </strong>
+<ul>
+ 	<li>Habitat selects partner families based on income, need and willingness to partner.</li>
+ 	<li>Habitat affiliates use volunteer labor and donated materials to keep costs low.</li>
+ 	<li>The homeowner will provide a number of sweat equity hours relative to their specific scope of work.</li>
+ 	<li>The home owner will contribute a minimum of $50 donation for the work</li>
+</ul>
+
+</div>
+</div>

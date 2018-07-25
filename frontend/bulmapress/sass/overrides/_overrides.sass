@@ -28,6 +28,7 @@ div.container
     // margin: 0
 
 div.content
+    padding-top: 12px
     width: 100vw
     padding-bottom: 0
     margin-bottom: 0
@@ -81,14 +82,17 @@ input, textarea
     border: 1px dotted $white
     padding-left: 8px
     font-size: 22px
+    background: rgba(255,255,255,0.5)
+    border-bottom: 3px double $white
+    color: $white
      
     
 form
     padding-top: 12vh
     padding-bottom: 12vh
     padding-left: 20vw
-    font-size: 22px
-    @media(max-width: 729px)
+    
+    @media(max-width: 769px)
         padding-left: 5vw
         padding-right: 5vw
 
@@ -97,17 +101,59 @@ label
 
  
 input, textarea 
-    @media(max-width: 729px)
+    @media(max-width: 769px)
         width: 90vw 
         margin: 5vw
 
+input[type="checkbox"]
+    text-align: left
+    width: auto
+   
+    
+span.wpcf7-list-item
+    display: block
+    border-bottom: 2px solid  $light
+    border-left: 0
+    border-right: 0
+    border-top: 4px double $white
+    border-radius: 12px
+    width: 60vw
+    padding: 5px
+    margin: 3px
+    background: rgba(255,255,255,0.2)
+    @media(max-width: 769px)
+        width: 90vw 
+        border-bottom: 1 px solid $light
+        border-left: 0
+        border-right: 0
+        border-top: 1px double $white
+    
+fieldset
+    border: 2px solid white
+
+h2.widget-title 
+    margin: 0
+form#searchform
+   margin: 0
+   
+    padding: 0
+ 
+input#searchsubmit
+ 
+    width: 145px
+       
+
 .img-blur 
-    filter: blur(.1px)
+    filter: blur(2px)
 
 .half-page-top-mar
     margin-top: 45vh
-    @media(max-width: 729px)
+    @media(max-width: 769px)
         margin-top: 20vh
+.quarter-page-top-mar
+    margin-top: 15vh
+    @media(max-width: 769px)
+        margin-top: 8vh
 
 @font-face 
     font-family: 'Minion Pro'
@@ -143,13 +189,23 @@ header
 div.animated-bg 
 	animation: green-to-blue 22s ease infinite
 
+.animated-bg-offset-1
+	animation: green-to-blue 22s ease infinite
+.animated-bg-offset-2
+	animation: green-to-blue 26s ease infinite
+.animated-bg-offset-3
+	animation: green-to-blue 32s ease infinite
+
 div.eighty-five
     width: 75%
-    @media(max-width: 729px)
+    @media(max-width: 769px)
         width: 100%
 
 div.paper
+    width: 100vw
     background: $light !important
+    a
+        color: $green
 div.paper.no-bottom 
     margin-bottom: 0
 div.no-bottom
@@ -202,7 +258,7 @@ input.newsletter
     padding: 10px
     background: $blue
     color: $light
-    @media(max-width: 729px)
+    @media(max-width: 769px)
         width: 90% 
         margin: 5%
 input.newsletter[type="submit"]
@@ -215,17 +271,39 @@ form.newsletter
     padding: 20px 0 20px 0
 li.unstyled
     list-style: none
-    background: $green
-    border: 2px solid white
+    border: 5px solid white
     border-radius: 50%
-    padding: 38px
-    height: 250px
-    width: 250px
+    padding: 65px
+    height: 300px
+    width: 300px
     text-align: center
     box-shadow: 6px 2px $grey 
-    @media(max-width: 769px)
-        padding: 15px
-        border-radius: 8px
-        width: 60vw
+    margin-left: -20px
+    @media(max-width: 958px)
+        margin: 0 auto
+
+.circle
+    border-radius: 50%
+   
+div.column#restore-green 
+    background-color: $green
+    color: $white
+div.column#restore-blue
+    background-color: $blue
+    color: $white
+    @media(min-width: 650px)
+        border-right: 8px solid $white
+div.columns.bottom-border
+    border-bottom: 8px solid $white
+.fb-page
+    padding: 25px
+    border-radius: 15px
+    @media(max-width: 650px)
+        padding: 0
+        iframe
+            width: 300px
+            
+img.img-responsive
+    @media(max-width:1200px) and (min-width:846)
+        width: 120px
         height: auto
-        font-size: .8em !important

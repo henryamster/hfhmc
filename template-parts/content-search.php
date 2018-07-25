@@ -9,9 +9,10 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('wrapper'); ?>>
-	<div class="container content">
+<div class="content paper columns">
+	<div class="column has-text-black is-6">
 		<header class="entry-header">
-			<?php bulmapress_the_title('is-3'); ?>
+			<?php bulmapress_the_title('is-size-3'); ?>
 			<?php if ( 'post' === get_post_type() ) : ?>
 				<div class="entry-meta">
 					<?php bulmapress_posted_on(); ?>

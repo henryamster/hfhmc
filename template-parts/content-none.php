@@ -9,11 +9,11 @@
 ?>
 
 <section class="no-results not-found section">
-	<div class="container content">
+	<div class="container content paper has-text-black">
 		<header class="page-header">
 			<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'bulmapress' ); ?></h1>
 		</header><!-- .page-header -->
-		<div class="content page-content">
+		<div class="content page-content paper has-text-black">
 			<?php
 			if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 
