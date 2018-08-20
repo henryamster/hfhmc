@@ -95,11 +95,14 @@
 <hr>
 &copy; 2018 Habitat for Humanity of Madison &amp; Clark Counties.  
 </div></div>
+
 				
 			</div><!-- .site-info -->
 		</div>
 	</div><!-- .container -->
 </footer><!-- #colophon -->
+<marquee><span class="has-text-centered habitat-bold add-padd">THIS WEBSITE IS A WORK IN PROGRESS, PLEASE DO NOT SHARE THIS OUTSIDE OF THE ORGANIZATION.</span>
+</marquee>			
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

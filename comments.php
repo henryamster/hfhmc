@@ -17,7 +17,10 @@
  * the visitor has not yet entered the password we will
  * return early without loading the comments.
  */
-if ( post_password_required() ):
+
+//  REMOVE COMMENTS
+ /*
+ if ( post_password_required() ):
 	return;
 endif;
 ?>
@@ -29,8 +32,8 @@ endif;
 		if ( have_comments() ) : ?>
 		<div class="content comment-content">
 			<div class="header">
-				<h2 class="title is-3"><?php esc_html_e('Comments', 'bulmapress'); ?></h2>
-				<p class="subtitle">
+				<h2 class="title is-3 add-padd"><?php esc_html_e('Comments', 'bulmapress'); ?></h2>
+				<p class="subtitle add-padd">
 			<?php printf( // WPCS: XSS OK.
 				esc_html( _nx( 
 					'One thought on &ldquo;%2$s&rdquo;', 
@@ -103,3 +106,5 @@ endif;
 			comment_form($comment_args); ?>
 		</div><!-- .container -->
 	</div><!-- #comments -->
+
+ */

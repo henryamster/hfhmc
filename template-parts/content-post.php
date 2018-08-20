@@ -8,7 +8,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('card'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('card '); ?>>
 	<?php if ( has_post_thumbnail() ): ?>
 		<div class="card-image">
 			<figure class="image is-16by9">
@@ -36,7 +36,7 @@
 				<?php endif; ?>
 			</header><!-- .entry-header -->
 		</div>
-		<div class="content  <?php if ( 'post' === get_post_type() ) : ?> post-content <?php endif; ?> entry-content">
+		<div class="content white-bg has-text-black auto-width <?php if ( 'post' === get_post_type() ) : ?> post-content <?php endif; ?> entry-content">
 		<?php if ( is_single() ) : ?>
 			<?php the_content( sprintf(
 				/* translators: %s: Name of current post. */
@@ -52,7 +52,7 @@
 		<?php else : ?>
 			<?php the_excerpt(); ?>
 		<?php endif; ?>
-		<div class="content entry-footer">
+		<div class="content entry-footer white-bg ">
 			<small><?php bulmapress_entry_footer(); ?></small>
 		</div><!-- .entry-footer -->
 	</div><!-- .entry-content -->

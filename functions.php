@@ -8,6 +8,7 @@
  */
 
 
+
 require get_template_directory() . '/functions/bulmapress_navwalker.php';
 require get_template_directory() . '/functions/bulmapress_helpers.php';
 require get_template_directory() . '/functions/bulmapress_custom_query.php';
@@ -37,3 +38,22 @@ require get_template_directory() . '/functions/template-tags.php';
 require get_template_directory() . '/functions/extras.php';
 require get_template_directory() . '/functions/customizer.php';
 require get_template_directory() . '/functions/jetpack.php';
+
+  
+function wpb_adding_scripts() {
+wp_register_script('signup', get_template_directory_uri() . '/frontend/js/signup.js', array('jquery'),'1.1', true);
+wp_enqueue_script('signup');
+}
+  
+add_action( 'wp_enqueue_scripts', 'wpb_adding_scripts' );  
+
+function bulmapress_retrieve_last_post() {
+	$args = array( 'numberposts' => '1' );
+	$recent_posts = wp_get_recent_posts( $args );
+	foreach( $recent_posts as $recent ){
+		return '<a class="has-text-link" href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a>  ';
+	}
+	wp_reset_query();
+}
+add_shortcode( 'retrieve_last_post', 'bulmapress_retrieve_last_post' );
+	

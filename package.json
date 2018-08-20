@@ -8,7 +8,5 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "build-watcher": "^2.0.1"
-  }
+  "dependencies": {}
 }
