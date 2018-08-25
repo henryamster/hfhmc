@@ -127,13 +127,10 @@ div.comment-content {
 }
 
 .wpcf7 input, .wpcf7 textarea {
-  width: 60vw;
-  border-radius: 8px;
-  border: 1px solid white;
-  padding-left: 8px;
-  font-size: 22px;
-  background: rgba(255, 255, 255, 0.9);
-  border-bottom: 3px double white;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid #0a0a0a;
+  background: ivory;
   color: #0a0a0a;
 }
 
@@ -168,22 +165,23 @@ input#express-submit:hover {
   border: 2px solid #00b0d7;
 }
 
-form {
-  padding-top: 2vh;
-  padding-bottom: 12vh;
-  padding-left: 20vw;
-}
-
-@media (max-width: 769px) {
-  form {
-    padding-left: 10vw;
-    padding-right: 0vw;
-  }
-}
-
 .wpcf7 label {
-  font-weight: 600;
-  font-size: 1em;
+  font-weight: 100;
+  font-family: 'Minion Pro';
+}
+
+.wpcf7-submit {
+  background: #00b0d7 !important;
+  border-radius: 8px !important;
+  color: white !important;
+  padding: 5px !important;
+  border: 1px solid white !important;
+}
+
+.wpcf7-submit:hover {
+  background: white !important;
+  color: #00b0d7 !important;
+  border: 1px solid #00b0d7 !important;
 }
 
 select {
@@ -191,22 +189,27 @@ select {
   font-family: 'Minion Pro';
 }
 
-@media (max-width: 769px) {
-  .wpcf7 input, .wpcf7 textarea {
-    width: 80vw;
-  }
+label.checkbox {
+  width: 100%;
 }
 
-.wpcf7 input[type="checkbox"] {
-  text-align: left;
-  width: auto;
+span.block {
+  display: block;
+  width: 60vw;
+}
+
+.aoe {
+  min-width: 383px;
+}
+
+div.wpcf7-response-output {
+  color: #0a0a0a;
 }
 
 span.wpcf7-list-item {
-  display: block;
+  display: inherit;
   border-radius: 12px;
-  width: 60vw;
-  margin: 3px;
+  width: auto;
 }
 
 span.wpcf7-list-item label {
@@ -284,7 +287,7 @@ div#donate-float {
 .text-over-image-horiz {
   font-size: 1.2em;
   position: absolute;
-  top: 16em;
+  top: 18em;
   font-family: 'Minion Pro';
   letter-spacing: -.09em;
   background: rgba(255, 255, 255, 0.8);
@@ -691,7 +694,9 @@ div.white-bg a {
 
 select {
   display: block;
-  font-size: 1.2em;
+  font-size: 1em;
+  background: ivory;
+  font-family: 'Minion Pro';
 }
 
 .donation-form input, .donation-form textarea {
@@ -699,7 +704,7 @@ select {
   height: auto;
   border-bottom: 1px solid #0a0a0a;
   border-radius: 0;
-  background: rgba(0, 176, 215, 0.2);
+  background: ivory;
 }
 
 h3.squarebox {
@@ -857,12 +862,12 @@ p.habitat-emphasis {
   border-radius: 12px;
 }
 
-input[type="radio"] {
+#donation-form input[type="radio"] {
   display: none;
   /* simulate radiobutton appearance using pseudoselector */
 }
 
-input[type="radio"] + label:before {
+#donation-form input[type="radio"] + label:before {
   content: "";
   /* create custom radiobutton appearance */
   display: inline-block;
@@ -878,11 +883,11 @@ input[type="radio"] + label:before {
 }
 
 /* appearance of checked radiobutton */
-input[type="radio"]:checked + label:before, input[type="radio"]:active + label:before {
+#donation-form input[type="radio"]:checked + label:before, input[type="radio"]:active + label:before {
   background-color: #0a0a0a;
 }
 
-input[type="radio"]:hover + label:before {
+#donation-form input[type="radio"]:hover + label:before {
   background-color: #00b0d7;
 }
 

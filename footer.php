@@ -24,7 +24,7 @@
 			<div class="column has-text-left has-text-white">
 			<ul>
 			<li>
-			<span class="has-text-weight-bold is-size-5">
+			<span class="has-text-weight-bold is-size-4 minion">
 			Habitat For Humanity <br/>
 			Madison &amp; Clark Counties
 			</span>
@@ -44,7 +44,7 @@
 				<div class="column has-text-left has-text-white is-hidden-mobile">
 			<ul>
 			<li>
-			<span class="has-text-weight-bold is-size-5">
+			<span class="has-text-weight-bold is-size-4 minion">
 			Habitat For Humanity ReStore <br/>
 			Clark County
 			</span>
@@ -62,7 +62,7 @@
 			<div class="column has-text-left has-text-white is-hidden-mobile">
 			<ul>
 			<li>
-			<span class="has-text-weight-bold is-size-5">
+			<span class="has-text-weight-bold is-size-4 minion">
 			Habitat For Humanity ReStore <br/>
 			Madison County
 			</span>
@@ -89,7 +89,7 @@
 
 <div class="column has-text-white is-size-7 is-bold is-fullwidth has-text-centered">
 <div class="columns">
-			<div class="column ">
+			<div class="column is-half is-offset-one-quarter ">
 	<?php get_search_form(); ?>
 </div></div>
 <hr>

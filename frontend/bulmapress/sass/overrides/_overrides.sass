@@ -81,13 +81,13 @@ div.comment-content
     @media(max-width: 769px)
         padding: 6px
 .wpcf7 input, .wpcf7 textarea
-    width: 60vw
-    border-radius: 8px
-    border: 1px solid $white
-    padding-left: 8px
-    font-size: 22px
-    background: rgba(255,255,255,0.9)
-    border-bottom: 3px double $white
+    // width: 60vw
+    border-radius: 0
+    border: 0
+    border-bottom: 1px solid $black
+    // padding-left: 8px
+    // font-size: 22px
+    background: ivory
     color: $black
 
 .btn-submit-donation
@@ -121,38 +121,54 @@ input#express-submit:hover
     border: 2px solid $primary
     
     
-form
-    padding-top: 2vh
-    padding-bottom: 12vh
-    padding-left: 20vw
+// form
+//     padding-top: 2vh
+//     padding-bottom: 12vh
+//     padding-left: 20vw
     
-    @media(max-width: 769px)
-        padding-left: 10vw
-        padding-right: 0vw
+//     @media(max-width: 769px)
+//         padding-left: 10vw
+//         padding-right: 0vw
 
 .wpcf7 label
-    font-weight: 600
-    font-size: 1em
- 
+    font-weight: 100
+    // font-size: 1.2em
+    font-family: 'Minion Pro'
+.wpcf7-submit
+    background: $primary !important
+    border-radius: 8px !important
+    color: $white !important
+    padding: 5px !important
+    border: 1px solid $white !important
+
+.wpcf7-submit:hover
+    background: $white !important
+    color: $primary !important
+    border: 1px solid $primary !important
 select 
     font-size: 1em
     font-family: 'Minion Pro'
  
-.wpcf7 input, .wpcf7 textarea 
-    @media(max-width: 769px)
-        width: 80vw 
+// .wpcf7 input, .wpcf7 textarea 
+//     @media(max-width: 769px)
+//         width: 80vw 
 
-.wpcf7 input[type="checkbox"]
-    text-align: left
-    width: auto
+// .wpcf7 input[type="checkbox"]
+//     // width: 100%
    
-   
-    
-span.wpcf7-list-item
+label.checkbox 
+    width: 100%
+span.block
     display: block
-    border-radius: 12px
     width: 60vw
-    margin: 3px
+.aoe
+    min-width: 383px
+div.wpcf7-response-output 
+    color: $black
+span.wpcf7-list-item
+    display: inherit
+    border-radius: 12px
+    width: auto
     label 
         font-size: 1em
         font-weight: 100
@@ -210,7 +226,7 @@ div#donate-float
 .text-over-image-horiz
     font-size: 1.2em
     position: absolute
-    top: 16em
+    top: 18em
     font-family: 'Minion Pro'
     letter-spacing: -.09em
     background: rgba(255,255,255,0.8)
@@ -461,15 +477,21 @@ div.white-bg
     width: auto !important
 select
     display: block
-    font-size: 1.2em
+    font-size: 1em
+    background: ivory
+    font-family: 'Minion Pro'
 
 .donation-form input, .donation-form textarea
     width: auto
     height: auto
     border-bottom: 1px solid $black
     border-radius: 0
-    background: rgba($primary, 0.2)
-
+    background: ivory
+// label.avail
+//     display: inline
+//     width: 120px
+// fieldset.flex 
+//     display: flex
 
 h3.squarebox
     padding: 20px
@@ -588,12 +610,12 @@ p.habitat-emphasis
 
 
 
-input[type="radio"] 
+#donation-form input[type="radio"] 
   display: none
 
 
     /* simulate radiobutton appearance using pseudoselector */
-input[type="radio"] + label:before 
+#donation-form input[type="radio"] + label:before 
   content: ""
   /* create custom radiobutton appearance */
   display: inline-block
@@ -609,10 +631,10 @@ input[type="radio"] + label:before
 
 
 /* appearance of checked radiobutton */
-input[type="radio"]:checked + label:before, input[type="radio"]:active + label:before 
+#donation-form input[type="radio"]:checked + label:before, input[type="radio"]:active + label:before 
   background-color: $black
 
-input[type="radio"]:hover + label:before 
+#donation-form input[type="radio"]:hover + label:before 
   background-color: $primary
 
 /* resetting default box-sizing */
