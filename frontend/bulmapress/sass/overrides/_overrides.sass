@@ -1,4 +1,7 @@
-.fa, .fas, .fab  
+body
+    overflow-x: hidden
+    
+    .fa, .fas, .fab  
     font-family: 'FontAwesome' !important
     font-style: normal
    
@@ -27,7 +30,9 @@ ul.is-unstyled
 img.is-cover-fit
     object-fit: cover
     min-width: 100vw
-    height: 100vh
+    min-height: 100vh
+    width: auto
+    height: auto
 div.container
     // margin: 0
 
@@ -256,9 +261,9 @@ h2.widget-title
     padding-right: 55vw
 form#searchform
    margin: 0
-   height: 124px
+   height: 48px
    padding: 0 auto
-   margin: 0 auto
+   margin: 27 auto
  
 input#searchsubmit
  
@@ -341,10 +346,10 @@ div.paper.no-bottom
     margin-bottom: 0
 div.no-bottom
     padding-bottom: 0 !important
-    margin-borrom: 0 !important
+    margin-bottom: 0 !important
 #newsletter-div.no-bottom
     padding-bottom: 0 !important
-    margin-borrom: 0 !important
+    margin-bottom: 0 !important
 
 .video-content
     width: 100vw
@@ -397,27 +402,31 @@ label.newsletter
     display: inline
 input.newsletter
     font-size: 14px
-    width: 40vw
+    width: 350px
     display: inline
-    margin: 5px
-    padding: 10px
+    margin: 12px
+    padding: 16px
     background: $white
     color: $black
     border-radius: 18px
     border: 0
     @media(max-width: 769px)
         width: 90% 
-        margin: 5%
+        margin: 0 5%
 input.newsletter[type="submit"]
+    margin: 12px
     color: $black
     display: inline
     width: 160px
+    @media(max-width: 769px)
+        width: 90% 
+        margin: 0 5%
 .is-centered
     text-align: center
 .zero-auto
    padding-left: 25px
-form.newsletter
-    padding: 20px 0 20px 0
+div.newsletter
+    padding: 20px 0 120px 0
 li.unstyled
     list-style: none
     border: 5px solid rgba(10, 10, 10, 0.05)
@@ -497,6 +506,9 @@ h3.squarebox
     padding: 20px
     border: 1px solid white
     border-radius: 1px
+h3.squarebox:hover, h3.squarebox:active
+    background: $link
+    color: $black
     
 
 a.showcoupon
@@ -648,3 +660,36 @@ label.error
     color: $warning
     padding-left: 12px
     font-weight: 100
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) 
+  div#page
+      display: block !important
+  .video-content iframe
+      height: 122vh
+      width: 100vw
+      min-width: 300px
+  @media screen and (max-width: 1000px)
+      .video-content iframe
+        height: 50vh
+  @media screen and (max-width: 600px)
+      .video-content iframe
+        height: 30vh
+
+.view-cap, .view-container-border
+    background: $primary !important
+
+img.staff-photo
+    border-radius: 50%
+    height: 200px
+    width: 200px
+
+img.hab-icon
+    width: 150px
+    height: 150px
+
+a img.hab-icon:hover
+    border: 4px solid $white
+    border-radius: 50%
+
+.donate-popup
+   

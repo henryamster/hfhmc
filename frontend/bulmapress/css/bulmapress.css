@@ -1,6 +1,7 @@
 /*! bulmapress.com v0.0.1 | GNU General Public License v2 or later */
 /* -- Color Defaults -- */
-.fa, .fas, .fab {
+body {
+  overflow-x: hidden;
   font-family: 'FontAwesome' !important;
   font-style: normal;
 }
@@ -43,7 +44,9 @@ ul.is-unstyled {
 img.is-cover-fit {
   object-fit: cover;
   min-width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  width: auto;
+  height: auto;
 }
 
 div.content {
@@ -323,9 +326,9 @@ h2.widget-title {
 
 form#searchform {
   margin: 0;
-  height: 124px;
+  height: 48px;
   padding: 0 auto;
-  margin: 0 auto;
+  margin: 27 auto;
 }
 
 input#searchsubmit {
@@ -466,12 +469,12 @@ div.paper.no-bottom {
 
 div.no-bottom {
   padding-bottom: 0 !important;
-  margin-borrom: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 #newsletter-div.no-bottom {
   padding-bottom: 0 !important;
-  margin-borrom: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 .video-content {
@@ -568,10 +571,10 @@ label.newsletter {
 
 input.newsletter {
   font-size: 14px;
-  width: 40vw;
+  width: 350px;
   display: inline;
-  margin: 5px;
-  padding: 10px;
+  margin: 12px;
+  padding: 16px;
   background: white;
   color: #0a0a0a;
   border-radius: 18px;
@@ -581,14 +584,22 @@ input.newsletter {
 @media (max-width: 769px) {
   input.newsletter {
     width: 90%;
-    margin: 5%;
+    margin: 0 5%;
   }
 }
 
 input.newsletter[type="submit"] {
+  margin: 12px;
   color: #0a0a0a;
   display: inline;
   width: 160px;
+}
+
+@media (max-width: 769px) {
+  input.newsletter[type="submit"] {
+    width: 90%;
+    margin: 0 5%;
+  }
 }
 
 .is-centered {
@@ -599,8 +610,8 @@ input.newsletter[type="submit"] {
   padding-left: 25px;
 }
 
-form.newsletter {
-  padding: 20px 0 20px 0;
+div.newsletter {
+  padding: 20px 0 120px 0;
 }
 
 li.unstyled {
@@ -711,6 +722,11 @@ h3.squarebox {
   padding: 20px;
   border: 1px solid white;
   border-radius: 1px;
+}
+
+h3.squarebox:hover, h3.squarebox:active {
+  background: #c4d600;
+  color: #0a0a0a;
 }
 
 a.showcoupon {
@@ -903,6 +919,49 @@ label.error {
   color: #e55b24;
   padding-left: 12px;
   font-weight: 100;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  div#page {
+    display: block !important;
+  }
+  .video-content iframe {
+    height: 122vh;
+    width: 100vw;
+    min-width: 300px;
+  }
+}
+
+@media screen and (-ms-high-contrast: active) and (max-width: 1000px), screen and (-ms-high-contrast: none) and (max-width: 1000px) {
+  .video-content iframe {
+    height: 50vh;
+  }
+}
+
+@media screen and (-ms-high-contrast: active) and (max-width: 600px), screen and (-ms-high-contrast: none) and (max-width: 600px) {
+  .video-content iframe {
+    height: 30vh;
+  }
+}
+
+.view-cap, .view-container-border {
+  background: #00b0d7 !important;
+}
+
+img.staff-photo {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+img.hab-icon {
+  width: 150px;
+  height: 150px;
+}
+
+a img.hab-icon:hover {
+  border: 4px solid white;
+  border-radius: 50%;
 }
 
 /*! bulma.io v0.6.2 | MIT License | github.com/jgthms/bulma */
@@ -7726,12 +7785,12 @@ a.navbar-link.is-active {
     background-color: transparent !important;
   }
   .navbar.is-transparent .navbar-dropdown a.navbar-item:hover {
-    background-color: #c4d600;
+    background-color: #0a0a0a;
     color: white;
   }
   .navbar.is-transparent .navbar-dropdown a.navbar-item.is-active {
-    background-color: whitesmoke;
-    color: #c4d600;
+    background-color: #00b0d7;
+    color: #0a0a0a;
   }
   .navbar-burger {
     display: none;
@@ -7813,12 +7872,12 @@ a.navbar-link.is-active {
     padding-right: 3rem;
   }
   .navbar-dropdown a.navbar-item:hover {
-    background-color: #c4d600;
+    background-color: #0a0a0a;
     color: white;
   }
   .navbar-dropdown a.navbar-item.is-active {
-    background-color: whitesmoke;
-    color: #c4d600;
+    background-color: #00b0d7;
+    color: #0a0a0a;
   }
   .navbar-dropdown.is-boxed {
     border-radius: 5px;
@@ -7877,7 +7936,8 @@ a.navbar-link.is-active {
     background-color: transparent;
   }
   .navbar-item.has-dropdown:hover .navbar-link, .navbar-item.has-dropdown.is-active .navbar-link {
-    background-color: #7a7a7a;
+    background-color: white;
+    color: #00b0d7;
   }
 }
 
@@ -10919,11 +10979,6 @@ figure.aligncenter {
 
 .searchform .control.has-addons .input {
   width: 100%;
-  max-width: 240px;
-}
-
-.content .searchform .control.has-addons .input {
-  max-width: 400px;
 }
 
 .section {
@@ -11134,7 +11189,7 @@ figure.aligncenter {
 }
 
 .navbar-item {
-  color: #c4d600;
+  color: #0a0a0a;
 }
 
 .navbar-item.is-muted {

@@ -26,8 +26,6 @@
 	<div id="page" class="site">
 		<?php bulmapress_skip_link_screen_reader_text(); ?>
 		<header id="header">
-		<marquee><span class="has-text-centered habitat-bold add-padd">THIS WEBSITE IS A WORK IN PROGRESS, PLEASE DO NOT SHARE THIS OUTSIDE OF THE ORGANIZATION.</span>
-		</marquee>
 			<nav id="site-navigation" class="navbar has-background-primary" role="navigation">
 				<div class="navbar-brand has-background-primary ">
 					<?php bulmapress_home_link('navbar-item  has-text-white'); ?>

@@ -18,3 +18,25 @@ if (document.getElementById('volunteerForm')) {
 
 
 }
+
+
+if (document.getElementById('pickupForm')) {
+    var pf = document.getElementById('pickupForm');
+    pf.style.display = "none";
+
+
+    signupTogglePickup = document.getElementById('signupTogglePickup');
+
+    signupTogglePickup.addEventListener("click", togglePickup);
+
+    function togglePickup() {
+        if (pf.style.display == "block") {
+            pf.style.display = "none";
+        } else {
+            pf.style.display = "block";
+        }
+
+    }
+
+
+}
